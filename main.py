@@ -27,9 +27,9 @@ with open("config.json", "r") as f:
 def getenv(var):
     return environ.get(var) or DATA.get(var, None)
 
-bot_token = getenv("TOKEN")
-api_hash = getenv("HASH")
-api_id = getenv("ID")
+bot_token = getenv("7870355572:AAFHWAP5oLdwPg10jx5IGkZz6H_lMonuJL8")
+api_hash = getenv("d8ea0f3e56c55b8ef9c0e8cb39b9c857")
+api_id = getenv("28803298")
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 with app:
     app.set_bot_commands(
@@ -40,9 +40,9 @@ with app:
     )
 
 # Database setup
-db_api = getenv("DB_API")
-db_owner = getenv("DB_OWNER")
-db_name = getenv("DB_NAME")
+db_api = getenv("mongodb+srv://rohit37819_db_user:P7E2iD0dqVhCwrI0@cluster0.1e9ikck.mongodb.net/?appName=Cluster0")
+db_owner = getenv("rohit37819_db_user")
+db_name = getenv("Cluster0")
 try:
     database = DB(api_key=db_api, db_owner=db_owner, db_name=db_name)
 except:
@@ -298,3 +298,4 @@ def docfile(client: Client, message: Message):
 # Start the bot
 print("Bot Starting")
 app.run()
+
