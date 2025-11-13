@@ -11,3 +11,4 @@ lxml
 cfscrape
 curl-cffi
 urlextract
+six==1.16.0
