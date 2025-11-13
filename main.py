@@ -27,9 +27,9 @@ with open("config.json", "r") as f:
 def getenv(var):
     return environ.get(var) or DATA.get(var, None)
 
-bot_token = getenv("7870355572:AAFHWAP5oLdwPg10jx5IGkZz6H_lMonuJL8")
-api_hash = getenv("d8ea0f3e56c55b8ef9c0e8cb39b9c857")
-api_id = getenv("28803298")
+bot_token = getenv("TOKEN")
+api_hash = getenv("HASH")
+api_id = getenv("ID")
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 with app:
     app.set_bot_commands(
@@ -298,4 +298,5 @@ def docfile(client: Client, message: Message):
 # Start the bot
 print("Bot Starting")
 app.run()
+
 
