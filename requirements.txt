@@ -6,8 +6,10 @@ kurigram==2.2.0
 PyroTgCrypto==1.2.7
 lxml
 cfscrape
-urllib3==1.26
 flask
 gunicorn
 curl-cffi
 urlextract
+requests==2.31.0
+urllib3==1.26.18
+
